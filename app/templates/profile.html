@@ -1,0 +1,37 @@
+{% extends "base.html" %} 
+
+{% block main %} 
+
+<div class="contain">
+  <img src="{{url_for('static',filename='darthprof.svg')}}" alt="Profile Picture"/>
+  <h2>Darth Maul</h2>
+  <p>@dmaul</p>
+  <p>Talzin, Dathomir</p>
+  <p>Joined {{date}} </p>
+  <div class="bottom">
+
+    <p>I'm Darth Maul, the Sith with the most killer makeover since Anakin Skywalker's trip to Mustafar—though I've gotta admit, getting sliced in half did wonders for my diet plan!</p>
+
+    <div class="flow">
+      
+      <div class="core">
+        <h3>12</h3>
+        <h3>Posts</h3>
+      </div>
+
+      <div class="core">
+        <h3>1</h3>
+        <h3>Following</h3>
+      </div>
+
+      <div class="core">
+        <h3>750</h3>
+        <h3>Followers</h3>
+      </div>
+    </div>
+
+    <button type="button">Follow</button>
+
+  </div>
+</div>
+{% endblock %}
